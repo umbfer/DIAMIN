@@ -1,5 +1,3 @@
-package ppiscala
-
 import org.apache.arrow.vector.dictionary.Dictionary
 
 import java.util
