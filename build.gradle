@@ -1,0 +1,59 @@
+plugins {
+    id 'scala'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://dl.bintray.com/spark-packages/maven/'
+    }
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala', 'src/main/java']
+        }
+        java {
+            srcDirs = []
+        }
+    }
+}
+
+shadowJar.zip64 = true
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ppispark.MainCloud'
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.spark/spark-sql
+    compile group: 'org.apache.spark', name: 'spark-sql_2.11', version: '2.4.4'
+
+    // https://mvnrepository.com/artifact/org.apache.spark/spark-graphx
+    compile group: 'org.apache.spark', name: 'spark-graphx_2.11', version: '2.4.4'
+
+    // https://mvnrepository.com/artifact/graphframes/graphframes
+    compile group: 'graphframes', name: 'graphframes', version: '0.8.1-spark2.4-s_2.11'
+
+    // https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver
+    compile group: 'org.neo4j.driver', name: 'neo4j-java-driver', version: '4.1.1'
+
+    // https://mvnrepository.com/artifact/org.apache.spark/spark-graphx
+    compile group: 'neo4j-contrib', name: 'neo4j-connector-apache-spark_2.11', version: '4.0.0'
+
+    // https://mvnrepository.com/artifact/org.mongodb.spark/mongo-spark-connector
+    compile group: 'org.mongodb.spark', name: 'mongo-spark-connector_2.11', version: '2.4.2'
+
+}
