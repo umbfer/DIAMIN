@@ -1,5 +1,3 @@
-package ppispark.util;
-
 import com.mongodb.spark.MongoSpark;
 import jdk.internal.net.http.frame.DataFrame;
 import org.apache.spark.SparkContext;
