@@ -78,11 +78,11 @@ measure by combining _DIAMIN_ function on IntelliJ IDEA:
 
 
 5. [Build the source code and create an executable jar]().
-6. Run you algorithm on local mode.
+6. Run your algorithm on local mode.
 ```
 spark-submit diamin-1.0.0-all.jar LOCAL human_intact_network.txt my_algorithm 20
 ```
-7. Run you algorithm on local mode.
+7. Run your algorithm on local mode.
 ```
 spark-submit diamin-1.0.0-all.jar CLUSTER human_intact_network.txt my_algorithm 20
 ```
