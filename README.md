@@ -20,7 +20,7 @@ The jar file enables the usage of the _DIAMIN_ library from the command line by 
 java -jar diamin-1.0.0-all.jar [_input_parameters_] function_name [input_parameters]
 ```
 
-The [Manual.pdf]() lists and describes in depth all the functions provided by the _DIAMIN_ library. In the following, the command lines to run the examples discussed in the reference paper.
+The [Manual.pdf](https://github.com/ldirocco/DIAMIN/edit/main/Manual.md) lists and describes in depth all the functions provided by the _DIAMIN_ library. In the following, the command lines to run the examples discussed in the reference paper.
 
 #### Example 1
 In a Molecular Interaction Network pivotal interactors are likely to be represented by highly connected nodes (i.e., hubs). 
