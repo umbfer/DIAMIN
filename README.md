@@ -3,7 +3,7 @@ _DIAMIN_ is a high-level software library to facilitate the development of appli
 
 ## Usage
 It runs over Apache Spark (>=2.3,https://spark.apache.org/) and requires a Java compliant virtual machine (>= 1.8). 
-The software is released as a single executable jar file, diamin-1.0.0-all.jar, that can be used to process large molecular interaction networks, running in a Local Mode or in a Cluster Mode.
+The software is released as a single executable jar file, diamin-1.0.0-all.jar, that can be used to process large molecular interaction networks in a Local Mode or in a Cluster Mode.
 
 ### Local Mode
 With Local Mode, _DIAMIN_ employs multiple CPU cores of a single machine. The Local mode requires a proper installation of the Java Development Kit (JDK):
